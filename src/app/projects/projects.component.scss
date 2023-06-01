@@ -66,3 +66,11 @@ section img {
 :host.pc section:last-child:after {
     height: 100%;
 }
+
+@media (max-width: 800px) {
+    section img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+}
