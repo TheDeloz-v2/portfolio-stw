@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Projects</h1>
+  
+    <section *ngFor="let project of projects">
+      <h2>{{ project.title }}</h2>
+  
+      <img [src]="project.imagePath" alt="{{ project.title }}" />
+  
+      <h3>
+        <span>Tecnologías: </span>
+        <span>{{ project.technologies }}</span>
+      </h3>
+  
+      <ul *ngFor="let desc of project.description">
+        <li>{{ desc }}</li>
+      </ul>
+  
+      <h3>
+        <span>Visualización: </span>
+        <a [href]="project.link">Link</a>
+      </h3>
+    </section>
+  </div>
+  

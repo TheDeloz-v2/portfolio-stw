@@ -7,10 +7,11 @@ import { BanerComponent } from './baner/baner.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { ResponsiveDirective } from './directives/responsive.directive';
 
 @NgModule({
-  declarations: [AppComponent, BanerComponent, PersonalInformationComponent, EducationComponent, SkillsComponent, ResponsiveDirective],
+  declarations: [AppComponent, BanerComponent, PersonalInformationComponent, EducationComponent, SkillsComponent, ProjectsComponent, ResponsiveDirective],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
