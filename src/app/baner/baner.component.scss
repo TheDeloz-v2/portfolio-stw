@@ -1,0 +1,89 @@
+*{
+    --color1: #940e0e;
+}
+
+:host {
+    display: block;
+    padding: 4rem 2rem 6rem;
+    background-color: rgb(75, 84, 93);
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.name {
+    grid-row: 3/4;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    outline: 1px solid white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.name span:nth-of-type(1) span {
+    font-size: 3rem;
+    color: white;
+}
+
+.name span:nth-of-type(2) {
+    display: inline-block;
+    color: var(--color1);
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 10px 0;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px 5px var(--black);
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    grid-row: 2/3;
+    margin: 0 auto;
+    position: relative;
+    border: var(--color1) 5px solid;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+:host.pc {
+    padding: 4rem 2rem 10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+
+:host.pc .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+:host.pc .title {
+    grid-column: 1/2;
+    padding: 0%;
+    margin: auto;
+    font-size: 5rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+:host.pc .profile {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    width: 600px;
+    height: 600px;
+}
+
+:host.pc .name {
+    grid-row: 2/3;
+    width: 600px;
+    margin: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: max-content;
+}
