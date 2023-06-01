@@ -8,10 +8,11 @@ import { PersonalInformationComponent } from './personal-information/personal-in
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 import { ResponsiveDirective } from './directives/responsive.directive';
 
 @NgModule({
-  declarations: [AppComponent, BanerComponent, PersonalInformationComponent, EducationComponent, SkillsComponent, ProjectsComponent, ResponsiveDirective],
+  declarations: [AppComponent, BanerComponent, PersonalInformationComponent, EducationComponent, SkillsComponent, ProjectsComponent, ContactComponent, ResponsiveDirective],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
