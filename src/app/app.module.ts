@@ -5,9 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BanerComponent } from './baner/baner.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ResponsiveDirective } from './directives/responsive.directive';
 
 @NgModule({
-  declarations: [AppComponent, BanerComponent, PersonalInformationComponent],
+  declarations: [AppComponent, BanerComponent, PersonalInformationComponent, EducationComponent, SkillsComponent, ResponsiveDirective],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
