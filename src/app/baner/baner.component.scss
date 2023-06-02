@@ -11,6 +11,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    animation: fadeFromRight 0.9s ease-in;
 }
 
 .name {
@@ -39,8 +40,8 @@
 }
 
 .profile {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     grid-row: 2/3;
     margin: 0 auto;
     position: relative;
@@ -53,6 +54,17 @@
     position: absolute;
 }
 
+@keyframes fadeFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 :host.pc {
     padding: 4rem 2rem 10rem;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
@@ -61,6 +73,7 @@
 :host.pc .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
+    animation: fadeFromRight 0.9s ease-in;
 }
 
 :host.pc .title {

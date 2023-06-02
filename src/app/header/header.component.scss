@@ -1,0 +1,81 @@
+  
+ :root{
+    --main-color:#fff;
+  }
+  
+  .main-header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: transparent !important;
+    width: 100%;
+    height:50px;
+  }
+  
+  nav{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    position: fixed;
+    left:0;
+    top:1px;
+    width: 150px;
+    top:50px;
+    height:calc(100vh - 50px);
+    background: transparent;
+    transform:translateX(-100%);
+    transition:.4s ease;
+    background-color: black;
+  }
+  
+  .navigation li{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    list-style:none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+  
+  .navigation a{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    color:var(--main-color);
+    display: block;
+    line-height:3.5;
+    padding: 0 10px;
+    text-decoration:none;
+    transition:.4s ease;
+    color: white;
+  }
+  
+  .navigation a:hover{
+    transform:translateX(10%);
+  }
+  
+  #btn-nav{
+    display: none;
+  }
+  
+  #btn-nav:checked ~ nav{
+    transform:translateX(0);
+  }
+  
+  .btn-nav{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    color: white;
+    font-size:30px;
+    left:0;
+    top:0;
+    cursor:pointer;
+    padding:6.5px 35px;
+    transition:.2s ease;
+    background:rgba(0,0,0,.1);
+  }
+  
+  .btn-nav:hover{
+    background:rgba(0,0,0,.3);
+  }
