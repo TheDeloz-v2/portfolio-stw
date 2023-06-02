@@ -64,20 +64,37 @@
   }
   
   .btn-nav{
-    outline: 4px white solid;
-    padding: 0;
-    margin: 0;
-    color: white;
-    background-color: #fff;
-    font-size:30px;
-    left:0;
-    top:0;
+    position: relative;
+    margin-top: 100px;
+    top: 17px;
+    left: 17px;
+    font-size:0px;
     cursor:pointer;
-    padding:6.5px 35px;
     transition:.2s ease;
     background:rgba(0,0,0,.1);
+
+    span.bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 5px;
+        transition: background-color 0.3s ease;
+      }
   }
   
   .btn-nav:hover{
     background:rgba(0,0,0,.3);
+  }
+
+  #btn-nav:checked ~ .btn-nav span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #btn-nav:checked ~ .btn-nav span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #btn-nav:checked ~ .btn-nav span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
